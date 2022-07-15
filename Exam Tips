@@ -1,22 +1,14 @@
-• If you feel like you messed up the machine, feel free to revert it. On the exam, you're allowed a total of 24 reverts, which should be plenty.
-• When choosing a web shell, I use White Winter Wolf whenever I can. Keep in mind that for the exam, a web shell does NOT count as a shell (see exam guide).
-• Watch out for anything that looks weird. For example, if you have a shell and are trying to privesc, a file with a weird name might be the key.
-• When enumerating a web service, look not only for the web server version, but the CMS version as well. It might be visible on the page, but you might also have to hit Ctrl+U or look in Burp Suite to see it.
-• There is almost never a reason to enumerate a website without proxying through Burp Suite. Learn how to use Burp Suite well.
-  ○ Only the free edition is allowed on the exam. In the free edition, Intruder is throttled (slows down as you send requests). I heard ZAP (a similar tool) doesn’t get throttled, but I never tried it.
-• Enumeration is ITERATIVE. For example, if you see what looks to be a username, 
-• For your terminal, I recommend using either Qterminal or Terminator. Both allow you to create a) tabs and b) panes within each tab.
-• Always try to improve your shell (using either the technique or by uploading/downloading an SSH key [assuming the target running SSH])
-• /etc/hosts
-  ○ A lot of commands (e.g. nmap) accept both host names and IP addresses. Typing a host name is much more convenient.
-  ○ If you do this, make sure you include a screenshot of your /etc/hosts file when writing your exam report.
-• This will keep track of your bash history (both commands and outputs):
-  <script thing I wrote>
-• Almost any tool you will need can be downloaded from Github. Sometimes, you just need one of the files. If you need multiple files from the repo, you'll probably use the git clone command to download the whole repo.
-  ○ Note: "Git" is the version control protocol used by Github (and a few other places). If you're considering becoming a software developer, do yourself a favor, and learn the basics of git.
-• If a host is dual-homed (e.g. is on a 192.168.0.0/24 subnet and a 10.0.0.0/8 subnet), then it's likely that you'll be able to pivot from that host (Pg. 600).
-• Make sure you have a shared folder on your Kali VM, for easy file transfers and backups. However, do NOT use this shared folder for your pen testing, unless you want to make troubleshooting a pain in the ass.
-• To figure out which boxes are associated with an AD domain controller (won't need it on the exam, but will need it in the PWK labs), run the script below against the domain controller:
-  ○ https://github.com/paranoidninja/alpha-stage-scripts/blob/master/dns_lookup_ad.sh
-Kernel exploits will normally be written in C. Whenever possible, compile your kernel exploit on the target machine.
-	• Useful aliases (for ~/.bashrc and ~/.zshrc files)
+• Schedule your exam based on how many hours you can work without getting too tired
+• Take frequent breaks (once every 2 hours)
+• 2-hour rule for moving on
+• Take frequent breaks
+• Schedule your exam as early as possible (convenient time slots fill up quickly)
+• Avoid "rabbit holes"
+• If a password is not in rockyou.txt, you probably won't be able to crack it (although the exam guide says that technically, it could be a password from one of the lists in Kali Linux, so if you're paranoid, you can look through /usr/share/seclists).
+	• For OFFLINE password cracking, you don't need to go through the whole rockyou file (that will take too long). If you don't get it in the first few minutes, try something else. For cases where you don't plan on using the entire password list, hydra has the -u flag that iterates each password over all usernames before moving on to the next password
+		○  Also you can use /usr/share/seclists/Passwords/Leaked-Databases/rockyou-15.txt (first 250 passwords of rockyou.txt)
+• The grader must be able to follow how you did everything. This means take a ton of screenshots (better too many than too few). Missing a single screenshot can be the difference between passing and failing. Additionally, if you have trouble with a box and decide to return to it later, you will thank yourself if you took good screenshots.
+• msfconsole can be used on 1 machine only, so choose carefully. Ideally, leave it for when you're down to the last box that you need to pass the exam.
+
+• <Exam Report template>
+	• Note: You can emit sections of the template if they are not listed in the report requirements (for example, you don’t need a ”persistence” section).
