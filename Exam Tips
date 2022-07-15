@@ -1,0 +1,22 @@
+• If you feel like you messed up the machine, feel free to revert it. On the exam, you're allowed a total of 24 reverts, which should be plenty.
+• When choosing a web shell, I use White Winter Wolf whenever I can. Keep in mind that for the exam, a web shell does NOT count as a shell (see exam guide).
+• Watch out for anything that looks weird. For example, if you have a shell and are trying to privesc, a file with a weird name might be the key.
+• When enumerating a web service, look not only for the web server version, but the CMS version as well. It might be visible on the page, but you might also have to hit Ctrl+U or look in Burp Suite to see it.
+• There is almost never a reason to enumerate a website without proxying through Burp Suite. Learn how to use Burp Suite well.
+  ○ Only the free edition is allowed on the exam. In the free edition, Intruder is throttled (slows down as you send requests). I heard ZAP (a similar tool) doesn’t get throttled, but I never tried it.
+• Enumeration is ITERATIVE. For example, if you see what looks to be a username, 
+• For your terminal, I recommend using either Qterminal or Terminator. Both allow you to create a) tabs and b) panes within each tab.
+• Always try to improve your shell (using either the technique or by uploading/downloading an SSH key [assuming the target running SSH])
+• /etc/hosts
+  ○ A lot of commands (e.g. nmap) accept both host names and IP addresses. Typing a host name is much more convenient.
+  ○ If you do this, make sure you include a screenshot of your /etc/hosts file when writing your exam report.
+• This will keep track of your bash history (both commands and outputs):
+  <script thing I wrote>
+• Almost any tool you will need can be downloaded from Github. Sometimes, you just need one of the files. If you need multiple files from the repo, you'll probably use the git clone command to download the whole repo.
+  ○ Note: "Git" is the version control protocol used by Github (and a few other places). If you're considering becoming a software developer, do yourself a favor, and learn the basics of git.
+• If a host is dual-homed (e.g. is on a 192.168.0.0/24 subnet and a 10.0.0.0/8 subnet), then it's likely that you'll be able to pivot from that host (Pg. 600).
+• Make sure you have a shared folder on your Kali VM, for easy file transfers and backups. However, do NOT use this shared folder for your pen testing, unless you want to make troubleshooting a pain in the ass.
+• To figure out which boxes are associated with an AD domain controller (won't need it on the exam, but will need it in the PWK labs), run the script below against the domain controller:
+  ○ https://github.com/paranoidninja/alpha-stage-scripts/blob/master/dns_lookup_ad.sh
+Kernel exploits will normally be written in C. Whenever possible, compile your kernel exploit on the target machine.
+	• Useful aliases (for ~/.bashrc and ~/.zshrc files)
