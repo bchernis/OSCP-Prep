@@ -1,0 +1,30 @@
+• You should be able to download your textbook and videos from the website. Do so as soon as you get access.
+• Read the textbook!!
+	• If you successfully complete the lab report, you'll receive 10 extra points (you'll effectively need to score only 60% to pass). I do NOT recommend doing this, because this report will end up hundreds of pages long, and it must be 100% complete and correct. For more info, see: https://help.offensive-security.com/hc/en-us/articles/360046787731-PEN-200-Reporting-Requirements
+	• If you decide to do the report, make sure you work through the textbook exercises AS YOU GO THROUGH THE TEXTBOOK (don't put it off until later). You don't need to do the "Extra Mile" exercises or the ones that say "reporting is not required."
+• Do plenty of boxes. Use Tjnull's list of recommended boxes.
+• How you train is how you fight. Treat each practice box as if it's an exam box. Take a lot of screenshots, same as you would for on the exam (for writing the report).
+• Note taking
+	• Write checklists for each service that needs enumeration (smb, http, ftp, ssh, etc)
+	• Have a notes page for each: tool, practice box, exploit you've used
+		○ Remember to take lots and lots of screenshots!!!
+	• Here are how my notes are organized:
+		○ <Screenshots>
+	• Find an excellent note-taking software. Some people like Obsidian, Cherry Tree, Joplin, etc. I recommend Microsoft OneNote, because:
+		○ The search functionality is awesome. Hotkeys are Ctrl+E for global search and Ctrl+F for search on the page. Text from images is automatically searched, which really comes in handy for screenshots. Search terms do NOT have to be consecutive (if the page you're looking for contains the word "foo" and the word "bar", you can just type "foo bar" without quotes to search for that page).
+			§ Note: Use quotes when searching for special characters and/or consecutive words.
+		○ It automatically syncs with Microsoft's cloud, so you can access your notes from your phone.
+		○ Indentating (and creating checklists) is very easy.
+		○ Throwing in a screenshot is easy, and you can shrink it as much as you want (and unshrink it when you want to actually see it).
+• <Explain which OSCP machines are for what>
+	• https://help.offensive-security.com/hc/en-us/articles/4406841351316-PEN-200-Onboarding-A-Student-Introduction-Guide-to-the-OSCP-adjusted-for-the-Training-Library-
+• Don't be confused about why there is a Wireshark/TCPdump section. You'll only use (probably Wireshark only) if you find a pcap file on a machine.
+• For PG boxes, focus on the ones that don’t say play <insert appropriate term here>.
+• PG, HTB, and VH is all good, but at the end of the day, PWK boxes are going to prep you for the exam. Note: You may need to pivot to get to the ones not in the “Public” section, although most people that pivoting on the exam pivot on the exam.
+• You need about 70 boxes to have a good shot at passing. Try to do boxes without the walkthroughs. You may not post walkthroughs for the PWK boxes.
+• Make sure you know the basics of regexes. It will make searching for text (with grep) 
+• Take frequent snapshots of your Kali machine, in case you misconfigure something and need to revert to an earlier point. I used VirtualBox as my hypervisor.
+• Taking an OSCP bootcamp (such as the one with Evolve Security) really helps, but keep the following in mind:
+	• If you want to have a realistic shot at nailing the exam within a month of the bootcamp (as they advertise), you'll need to a) have some background knowledge in IT and NOT be starting from zero, b) study very hard (full 20+ hours per week) for the entire duration of the bootcamp (including the 3 week they give you to self-study) and continue at the same pace during that month after the bootcamp, and c) start hitting PWK boxes ASAP.
+• Learn buffer overflows very well. If you get a buffer overflow machine, popping a (low-privilege) shell should take you about an hour. Have your recipe down, and just follow it.
+• Enumeration, enumeration, enumeration!!! This is the most crucial part of hacking. Make sure your enumeration checklists are on point.
