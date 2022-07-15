@@ -1,0 +1,6 @@
+• Passive information gathering
+• SQLmap (because it's not allowed)
+	• Note: If you want, you can proxy it through Burp Suite, just to see how it works (and possibly get insights about the SQL injection enumeration process).
+• Probably DNS recon (you'll be given a list of IP addresses, which means you don't need to hunt for them)
+• Nessus (not allowed on the exam)
+• XSS (requires persuading a victim to click on a link [via phishing or something])
