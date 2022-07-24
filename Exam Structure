@@ -4,7 +4,7 @@
 	• https://www.offensive-security.com/offsec/oscp-exam-structure/
 		○ Getting all the AD boxes involves the following steps:
 			§ You are told which 3 of the 6 boxes are AD boxes, but you're NOT told which one you'll be able to gain the initial shell on.
-			§ Once you get a shell, you'll have to pivot to the other boxes using techniques in Chapter 21 of the textbook.
+			§ Once you get a shell with admin privileges, you'll have to pivot to the other boxes using techniques in Chapter 21 of the textbook.
 			§ In the end, you'll need to be admin on all 3 boxes, or you'll receive 0 points for the AD set.
 • The proof file will be under the Desktop folder on Windows systems and the home directory on Linux systems.
 	• For a regular user, the file is called local.txt.
